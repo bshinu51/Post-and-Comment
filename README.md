@@ -3,10 +3,10 @@ This is a react-redux based app that allows user to read/write/disable their pos
 
 ## Installation
 * Installing server
- - `cd server/api-server`
- - `npm install`
- - `node server`
+ `cd server/api-server`
+ `npm install`
+ `node server`
 * Installing client - open another terminal window
- - `cd frontend`
- - `npm install`
- - `yarn start`
+ `cd frontend`
+ `npm install`
+ `yarn start`

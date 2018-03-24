@@ -47,6 +47,7 @@ function getByCategory (token, category) {
 function get (token, id) {
   return new Promise((res) => {
     const posts = getData(token)
+    console.log(posts[id]+' '+id);
     res(
       posts[id].deleted
         ? {}

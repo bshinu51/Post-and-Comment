@@ -11,7 +11,7 @@ class App extends Component {
         <Route exact path='/' render={()=>(
           <Home/>
         )}/>
-        <Route path='/:post_id' render={(url)=>(
+        <Route path='/posts/:post_id' render={(url)=>(
           <Post params={url.match.params}/>
         )}/>
       </div>

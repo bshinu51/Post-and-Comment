@@ -2,27 +2,44 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.searchBar {
+  width: 100%;
+  top: 0;
+  left: 50px;
+  right: 50px;
+  display: flex;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 0 6px rgba(0,0,0,0.23);
+}
+.searchBarWrapper {
+  flex: 1;
+  background: #e9e;
+}
+.inputBar {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 1.25em;
+  border: none;
+  outline: none;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
+.container {
+  margin: 0 50px;
   padding: 20px;
-  color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
+.postlists {
+  margin: 50px;
 }
 
-.App-intro {
-  font-size: large;
+.postlist {
+  margin: 2px;
+  text-align: left;
 }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.postlistTitle {
+  font-size: 20px;
+  font-family: cursive;
+}
+.postlistBody {
+  text-align: left;
+  font-size: 20px;
 }

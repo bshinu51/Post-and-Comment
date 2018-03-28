@@ -7,7 +7,7 @@ class CommentList extends Component {
     listOfComments:[],
     needToUpdate: true,
   }
-  componentWillUpdate(){
+  componentWillMount(){
     if(this.state.needToUpdate)
       api.getAllComments(this.props.post.id)
         .then((comments)=>{

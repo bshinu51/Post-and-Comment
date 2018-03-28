@@ -17,20 +17,22 @@ class Post extends Component {
   render(){
     const post = this.state.post;
     return(
-      <div className='container'>
-        {post.deleted?'':
+      <div className='ind-post'>
+        {post.id?(post.deleted?'':
           <div>
-            <div>
-              <span>{post.title}</span>
-              <span> {new Date(post.timestamp).toLocaleDateString()}</span>
+            <div className='postlist-title'>
+              <div className='ind-post-title'>
+                <span>{post.title}</span>
+                <span> - {new Date(post.timestamp).toLocaleDateString()}</span>
+              </div>
+              <div className='ind-post-body'>
+                {post.body}
+              </div>
             </div>
-            <div>
-              {post.body}
-            </div>
-            <div>
+            <div className='comment-list'>
                 <CommentList post={post} />
             </div>
-          </div>
+          </div>):''
         }
       </div>
     )

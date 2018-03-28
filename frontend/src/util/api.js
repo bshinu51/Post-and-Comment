@@ -21,3 +21,13 @@ export const getCategories = () =>
 export const getAllComments = (id) =>
   fetch(`${api}/posts/${id}/comments`,{headers})
     .then(res => res.json());
+
+export const createPost = (data) =>
+  fetch(`${api}/posts`, {
+    headers: {
+      ...headers,
+      'Content-Type': 'application/json'
+    },
+    method:'POST',
+    body: JSON.stringify(data),
+  }).then(res => res.json());
